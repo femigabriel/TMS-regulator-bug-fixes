@@ -3,11 +3,10 @@ import Image from "next/image";
 import { ActivitiesTableProps } from "@/types/global";
 import type { DrawerProps, RadioChangeEvent } from "antd";
 import { Drawer, Input } from "antd";
-// import { PersonelDetailsModal } from "@/components/modals/PersonelDetailsModal";
-// import { DriverDetailsModal } from "@/components/modals/DriverDetailsModal";
-// import { RouteShedule } from "@/components/modals/RouteShedule";
-// import { QueryClient, useQuery } from "react-query";
-// import ApiServices from "@/types/ApiServices";
+import { DriverDetailsModal } from "@/components/regulator/modals/DriverDetailsModal";
+import { PersonelDetailsModal } from "@/components/regulator/modals/PersonelDetailsModal";
+import { RouteShedule } from "@/components/regulator/modals/RouteShedule";
+
 
 const ActivitiesTable: ActivitiesTableProps[] = [
   {
@@ -104,7 +103,7 @@ const ActivitiesTable: ActivitiesTableProps[] = [
 export const OperatorInfoTable = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState<DrawerProps["placement"]>("left");
-  const [users, setUsers] = useState([]);
+  // const [users, setUsers] = useState([]);
   // Drawer
   const showDrawer = () => {
     setOpen(true);
