@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button, Input, Tooltip } from "antd";
-import { CreateDriversModal } from "../modals/CreateDriversModal";
+import { CreateDriversModal } from "../regulator/modals/CreateDriversModal";
 
 const personnelInfo = [
   {
