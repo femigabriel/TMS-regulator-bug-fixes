@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Layout } from "@/components/operator/dashboard layout/layout";
 import { FleetsPage } from "@/components/fleets/FleetsPage";
+import { Layout } from "@/components/regulator/layout/layout";
 
 export default function fleets() {
   return (
