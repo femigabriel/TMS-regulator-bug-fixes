@@ -82,9 +82,7 @@ export const CreateDriversModal = () => {
                 />
               </div>
               <div className="flex flex-col mb-3">
-                <label htmlFor="" className="text-[#2C97CF] text-[16px]">
-                  Driver's License ID
-                </label>
+                {/* <label htmlFor="" className="text-[#2C97CF] text-[16px]"> Driver's License ID </label> */}
                 <Input
                   placeholder={"Johnumoh@gmail.com"}
                   onBlur={() => {}}
@@ -93,9 +91,7 @@ export const CreateDriversModal = () => {
                 />
               </div>
               <div className="flex flex-col mb-3">
-                <label htmlFor="" className="text-[#2C97CF] text-[16px]">
-                  Driver's License Expiring Date
-                </label>
+                {/* <label htmlFor="" className="text-[#2C97CF] text-[16px]">Driver's License Expiring Date</label> */}
                 <Input
                   placeholder={"+234 - 1112 24698"}
                   onBlur={() => {}}
