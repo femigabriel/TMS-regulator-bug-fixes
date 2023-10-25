@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { ActivitiesTableProps } from "@/types/global";
+// import { ActivitiesTableProps } from "@/types/global";
 import type { DrawerProps, RadioChangeEvent } from "antd";
 import { Drawer, Input } from "antd";
 import { PersonelDetailsModal } from "../modals/PersonelDetailsModal";
@@ -47,6 +47,7 @@ export const OperatorInfoTable = () => {
   async function fetchOperatorsList() {
     // let regulator = JSON.parse(sessionStorage.getItem('regulator') as string);
     let response = await OperatorService.getAll();
+    
     if (response) {
       let operatorList = response.map((data) => ({
         ...data,
@@ -178,8 +179,7 @@ export const OperatorInfoTable = () => {
           return (
             <div
               key={index}
-              className="text-[1em] grid grid-cols-4 py-2 px-2 rounded-[5px] my-2"
-            >
+              className="text-[1em] grid grid-cols-4 py-2 px-2 rounded-[5px] my-2">
               <span className=" uppercase">{list.operator}</span>
               <span>{list.fleets}</span>
               <span>{list.route}</span>

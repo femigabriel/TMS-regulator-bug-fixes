@@ -50,7 +50,7 @@ export const Drivers = () => {
     <div className="w-[674px] h-[933px]  shadow-md px-10 py-7">
       <h1 className="text-[1.25em] font-bold pb-10">Drivers</h1>
       <div className="flex justify-between py-10">
-        <h3 className="text-[1.05em] font-bold ">Drivers' information</h3>
+        <h3 className="text-[1.05em] font-bold ">Drivers information</h3>
         <div className="flex">
           <Image
             src="/icons/dashboard/fluent-emoji-high-contrast_leftt-arrow.svg"
