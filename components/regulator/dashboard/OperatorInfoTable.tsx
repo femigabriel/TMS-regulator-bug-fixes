@@ -47,7 +47,6 @@ export const OperatorInfoTable = () => {
   async function fetchOperatorsList() {
     // let regulator = JSON.parse(sessionStorage.getItem('regulator') as string);
     let response = await OperatorService.getAll();
-    
     if (response) {
       let operatorList = response.map((data) => ({
         ...data,
@@ -131,9 +130,9 @@ export const OperatorInfoTable = () => {
 
   return (
     <div className="w-full ">
-      <div className="grid grid-cols-4 text-[16px] pb-5 font-[700] border border-x-0 border-t-0 border-[#2C97CF4D]">
+      <div className="grid grid-cols-4 text-[16px] gap-7 pb-3 font-[700] border border-x-0 border-t-0 border-[#2C97CF4D]">
         <div className="flex">
-          <span>Operator</span>
+          <span className="ml-7">Operator</span>
           {/* <Image
             src="/icons/dashboard/basil_sort-outline.svg"
             alt=""
@@ -143,7 +142,7 @@ export const OperatorInfoTable = () => {
           /> */}
         </div>
         <div className="flex">
-          <span>List of Fleets</span>
+          <span className="ml-7">List of Fleets</span>
           {/* <Image
             src="/icons/dashboard/basil_sort-outline.svg"
             alt=""

@@ -60,7 +60,7 @@ const Map = ({ from, to, through }:DirectionProps) => {
             // });
         
         });
-    },[from, to]);
+    }, [from, to]);
 
     return (
     <div>
